@@ -1,5 +1,6 @@
 @import "tailwindcss";
 
+/* define design variables in @theme */
 @theme {
   --color-background: #0f1418;
   --color-foreground: #f0f2f5;
@@ -23,8 +24,11 @@
   --color-surface: #1a2329;
 }
 
+/* controls css injection order */
 @layer base{
     body {
         background-color: var(--color-background);
+        color: var(--color-foreground);
+        font-family: "Inter", sans-serif;
     }
 }

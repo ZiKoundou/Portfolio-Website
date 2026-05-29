@@ -1,12 +1,16 @@
 import { useState } from 'react'
-import Navbar from './components/Navbar.jsx'
+import Navbar from './layout/Navbar.jsx'
 
 
 function App() {
 
   return (
-    <div>
+    // what do these classnames mean?
+    <div className="min-h-screen overflow-x-hidden">
       <Navbar />
+      <main>
+
+      </main>
     </div>
   )
 }

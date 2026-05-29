@@ -3,7 +3,7 @@ import React from 'react';
 const Navbar = () => {
     return (
         <div>
-            <p className="text-red-500"> Navbar </p>
+            <p className="text-blue-500"> Navbar </p>
         </div>
     )
 }
