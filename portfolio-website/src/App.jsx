@@ -11,7 +11,8 @@ import { Projects } from '@/sections/Projects'
 function App() {
 
   return (
-    // what do these classnames mean?
+    // makes whatever is in the app div the size of the screem
+    // ogerflow-x-hidden hides anything outside horizontally. (no horizontal scroll)
     <div className="min-h-screen overflow-x-hidden">
       <Navbar />
       <main>
