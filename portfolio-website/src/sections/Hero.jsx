@@ -1,3 +1,7 @@
+import { Button } from "@/components/Button.jsx"
+import { ArrowRight } from "lucide-react"
+import { AnimatedBorderButton } from "@/components/AnimatedBorderButton"
+
 export const Hero = () => {
     return (
         <section className="relative min-h-screen flex items-center overflow-hidden">
@@ -17,10 +21,52 @@ export const Hero = () => {
                             left: `${Math.random() * 100}%`,
                             top: `${Math.random() * 100}%`,
                             animation: `slow-drift ${15 + Math.random() * 20}s ease-in-out infinite`,
-                            animationDelay: `${Math.random() * 5}s`
+                            animationDelay: `${Math.random() * 5}s`,
                         }}
                     />
                 ))}
+            </div>
+
+            {/* Content */}
+            <div className="container mx-auto px-6 pt-32 pb-20 relative z-10">
+                <div className="grid lg-grid-cols-2 gap-12 items-center">
+                    {/* Left Column -Text Content*/}
+                    <div className="space-y-8">
+                        <div className="animate-fade-in">
+                            <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass text-sm text-primary">
+                                <span className= "w-2 h-2 bg-primary rounded-full animate-pulse"/>
+                                    Software Developer 
+                            </span>
+                        </div>
+                        {/* Headline */}
+                        <div className="space-y-4">
+                            <h1 className="text-5xl mid:text-6xl lg:text-7xl font-bold animate-fade-in animation-delay-100">
+                                Crafting<span className="text-primary glow-text"> digital</span>
+                                <br/> 
+                                    experiences with
+                                <br/>
+                                <span className="font-serif italic font-normal text-white">
+                                    precision
+                                </span>
+                            </h1>
+                            <p className="text-lg text-muted-foreground max-w-lg animate-fade-in animation-delay-200">
+                            I’m a software developer with experience across gameplay programming and web development. I’ve worked with C# in Unity, built frontend interfaces, and have a foundation in C++ and backend concepts. I focus on building clear, responsive systems and adapting quickly to new tools and workflows.
+                            </p>
+                        </div>
+
+                        {/* Call to Action */}
+                        <div className="flex gap-4 flex-wrap animate-fade-in animation-delay-300">
+                            <Button size="lg">
+                                Contact Me <ArrowRight className="w-5 h-5"/>
+                            </Button>
+                            <AnimatedBorderButton/>
+                        </div>
+
+                        
+                    </div>
+                    {/* Right column */}
+                    
+                </div>
             </div>
         </section>
 
