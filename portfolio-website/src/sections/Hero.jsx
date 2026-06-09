@@ -41,16 +41,16 @@ export const Hero = () => {
                         {/* Headline */}
                         <div className="space-y-4">
                             <h1 className="text-5xl mid:text-6xl lg:text-7xl font-bold animate-fade-in animation-delay-100">
-                                Crafting<span className="text-primary glow-text"> digital</span>
+                                Super<span className="text-primary glow-text"> chill</span>
                                 <br/> 
-                                    experiences with
+                                    individual with
                                 <br/>
                                 <span className="font-serif italic font-normal text-white">
-                                    precision
+                                    swag
                                 </span>
                             </h1>
                             <p className="text-lg text-muted-foreground max-w-lg animate-fade-in animation-delay-200">
-                            I’m a software developer with experience across gameplay programming and web development. I’ve worked with C# in Unity, built frontend interfaces, and have a foundation in C++ and backend concepts. I focus on building clear, responsive systems and adapting quickly to new tools and workflows.
+                            Software developer who likes building cool stuff. Currently working on my portfolio and familiarizing myself with frontend development for my upcoming sony apprenticeship.
                             </p>
                         </div>
 
